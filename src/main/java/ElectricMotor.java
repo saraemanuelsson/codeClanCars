@@ -1,9 +1,11 @@
-public class ElectricMotor {
+public class ElectricMotor implements IRun {
 
     private int battery;
+    private int batteryUsagePerMile;
 
-    public ElectricMotor() {
+    public ElectricMotor(int batteryUsagePerMile) {
         this.battery = 100;
+        this.battery = batteryUsagePerMile;
     }
 
     public int getBattery() {
@@ -23,6 +25,15 @@ public class ElectricMotor {
             this.battery = 0;
         }
         this.battery -= deplete;
+    }
+
+    public void run(int distance){
+        int chargedUsed = distance / this.batteryUsagePerMile;
+        this.battery -= chargedUsed;
+    }
+
+    public int getBatteryUsagePerMile() {
+        return this.batteryUsagePerMile;
     }
 
 

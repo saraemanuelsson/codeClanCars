@@ -10,7 +10,7 @@ public class CustomerTest {
 
     @Before
     public void before(){
-        engine = new Engine(100, 1500);
+        engine = new Engine(100, 1500, 20);
         car = new Car(5000, "blue", engine);
         customer = new Customer();
     }

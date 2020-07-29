@@ -1,15 +1,15 @@
 
 public class Car extends Vehicle {
 
-    private Engine engine;
+    private IRun iRunEngine;
 
-    public Car(int price, String colour, Engine engine){
+    public Car(int price, String colour, IRun iRunEngine){
         super(price, colour);
-        this.engine = engine;
+        this.iRunEngine = iRunEngine;
     }
 
-    public Engine getEngine(){
-        return this.engine;
+    public IRun getEngine(){
+        return this.iRunEngine;
     }
 
 }

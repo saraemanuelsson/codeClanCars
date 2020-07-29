@@ -11,8 +11,8 @@ public class HybridTest {
 
     @Before
     public void before(){
-        engine = new Engine(60, 1300);
-        electricMotor = new ElectricMotor();
+        engine = new Engine(60, 1300, 60);
+        electricMotor = new ElectricMotor(3);
         hybrid = new Hybrid(14000, "yellow", engine, electricMotor);
     }
 

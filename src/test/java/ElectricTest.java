@@ -10,7 +10,7 @@ public class ElectricTest {
 
     @Before
     public void before() {
-        electricMotor = new ElectricMotor();
+        electricMotor = new ElectricMotor(2);
         electric = new Electric(15000, "blue", electricMotor);
 
     }

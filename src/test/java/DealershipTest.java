@@ -13,7 +13,7 @@ public class DealershipTest {
     @Before
     public void before(){
         dealership = new Dealership(500);
-        engine = new Engine(70, 1500);
+        engine = new Engine(70, 1500, 20);
         car = new Car(10000, "red", engine);
     }
     
@@ -36,7 +36,5 @@ public class DealershipTest {
         assertEquals(10500, dealership.getTill());
         assertEquals(1, dealership.getNumberOfCars());
     }
-
-
 
 }
