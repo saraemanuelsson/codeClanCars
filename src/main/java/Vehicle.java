@@ -21,7 +21,7 @@ public abstract class Vehicle {
     }
 
     public void setColour(String colour) {
-        this.colour =
+        this.colour = colour;
     }
 
 }
