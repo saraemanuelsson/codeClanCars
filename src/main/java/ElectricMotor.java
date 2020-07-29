@@ -17,4 +17,14 @@ public class ElectricMotor {
         this.battery += charge;
     }
 
+
+    public void emptyBattery(int deplete) {
+        if (this.battery - deplete < 0) {
+            this.battery = 0;
+        }
+        this.battery -= deplete;
+    }
+
+
+
 }
